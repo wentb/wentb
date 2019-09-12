@@ -1,5 +1,61 @@
-<%include header.ejs %>
-<div class="login">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+ <title>淘文宝-AI学习体会|智能思想心得|教育心得|领导讲话|重要文章</title>
+ <meta name="keywords" content="淘文宝, 学习体会, 思想心得, 教育心得, 领导讲话, 重要文章" />
+ <meta name="description" content="淘文宝, 学习体会, 思想心得, 教育心得, 领导讲话, 重要文章" />
+ <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+ <link rel="stylesheet" type="text/css" href="/stylesheets/login.css"/>
+</head>
+<body id="body" style="height: 684px; background: url(&quot;/images/demo2.png&quot;) 0% 0% / cover no-repeat; position: static;">
 
+<div class="main-body">
+	<!-- 登录界面 -->
+	<div class="new-login">
+		<div class="top">
+			后台管理平台
+			<span class="bg1"></span>
+			<span class="bg2"></span>
+		</div>
+		<div class="bottom">
+			<div class="center">
+				<div class="item">
+					<span class="icon icon-2"></span>
+					<input type="text" id="loginSacct" placeholder="请输入帐号"
+						   maxlength="24">
+				</div>
+				<div class="item">
+					<span class="icon icon-3"></span>
+					<input type="password" id="loginPwd" placeholder="请输入密码" maxlength="20">
+					<input type="text" id="loginPwdText" placeholder="请输入密码" maxlength="20"
+						   class="hide">
+					<span class="icon icon-4"></span>
+				</div>
+				<div id="validatePanel" class="item hide" style="width: 137px;">
+					<input type="text" id="validateCode" placeholder="请输入验证码" maxlength="4">
+					<img id="validateImg" class="validateImg" src="">
+					<span id="validateRefresh" class="icon icon-6"></span>
+				</div>
+				<div class="error">密码错误，请重新输入或找回密码</div>
+			</div>
+			<div class="tip">
+				<span class="icon-nocheck" id="autoLogin"></span>
+				<span class="login-tip">两周内自动登录</span>
+				<a href="/reg" class="no-pwd">注册</a>
+			</div>
+			<div id="loginBtn" class="deal" onclick="login()">
+				立即登录
+			</div>
+		</div>
+	</div>
 </div>
-<%include footer.ejs %>
+<div class="foot">
+    <a id='beian' href='//www.beian.miit.gov.cn' target='_blank' rel='nofollow' style='margin-right: 15px;'>苏ICP备15113226号</a>
+    <a id='beianInfoHref' href='//www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010502000335' target='_blank'>苏公网安备 44010502000335号</a>
+    <a id='beianCopyright' href='#'>| Copyright ©2015-2019 淘文宝</a>
+</div>
+
+</body>
+</html>
