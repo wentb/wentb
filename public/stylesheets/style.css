@@ -57,7 +57,7 @@ body {line-height: 1;  *font-family:å¾®è½¯é›…é»‘}
 .wendang_n  p { font-size: 16px; color: #fff472; margin-top: 16px;height: 130px; }
 .footer_bq { width: 100%; text-align: center; color: #666666; font-size: 12px; margin-top: 20px; line-height:25px }
 /* æœç´¢æ¡† */
-.wp-search-wrapper .wp-search-box2 { position: relative; margin: 0 auto; width: 837px; height: 49px; padding-top: 38px; }
+.wp-search-wrapper .wp-search-box2 { position: relative; margin: 0 auto; width: 837px; height: 49px; padding: 0; margin-top: 50px;}
 .wp-search-box2 input { width: 692px; height: 45px; line-height: 45.5px; padding-left: 22px; border: 1px solid #fff; border-right: none; background: #fff; color: #000; outline: none;border-top-left-radius:100px; border-bottom-left-radius:100px;font-size: 16px; }
 .wp-search-box2 input::-webkit-input-placeholder { color: #F00;-webkit-opacity: 1; }
 .wp-search-box2 .search-btn { width: 117px; height: 48px; display: inline-block; background: url(../images/sousuo2.png?v=456) no-repeat; overflow: hidden; position: absolute }
