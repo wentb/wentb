@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-const user = require('../model/User');
 const WEBAPI = 'localhsot:8080/webapi';//TODO
 
 /* 首页 */
