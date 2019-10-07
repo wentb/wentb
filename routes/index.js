@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var user = require('../model/user');
+const user = require('../model/User');
 
 /* 首页 */
 router.get('/', function(req, res, next) {
@@ -22,11 +22,13 @@ router.post('/adduser', function(req, res, next){
   let params = req.body;
   let userName = params.userName;
   let password = params.password;
-  user.create({
+
+  let user = User.create({
     loginid:userName,
-    password:password,
-    createAt:new Date()
+    password:password
   });
+
+  console.log(user.get({'plain': true}));
 });
 
 router.get('/category', function(req, res, next) {
@@ -34,5 +36,4 @@ router.get('/category', function(req, res, next) {
 });
 
 //支付页 TODO
-
 module.exports = router;

@@ -1,10 +1,10 @@
-let path = require('path');
-let Sequelize = require('sequelize');
-var sequelize = new Sequelize(undefined, undefined, undefined, {
+const path = require('path');
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize(undefined, undefined, undefined, {
     host: 'localhost',
     dialect: 'sqlite',
     storage: path.join(__dirname,'../database/user.sqlite')
-});//在你需要的地方，创建好这个database文件夹
+});
 
 sequelize.authenticate().then(function(err) {
   console.log('Connection has been established successfully.');
@@ -12,11 +12,12 @@ sequelize.authenticate().then(function(err) {
   console.log('Unable to connect to the database:', err);
 });
 
-var user = sequelize.define('user',{
+var User = sequelize.define('user',{
     id:{
         type:Sequelize.INTEGER,
         allowNull: false,
         autoIncrement: true,
+        defaultValue: 1,
         primaryKey: true
     },
     loginid:{
@@ -33,4 +34,4 @@ var user = sequelize.define('user',{
     }
 });
 
-module.exports.user = user;
+module.exports.User = User;
